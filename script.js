@@ -11,7 +11,7 @@ const closeConfirmation = document.getElementById("close-confirmation");
 const donationListData = [
   {
     totalBalance: 0,
-    url: "/images/img2.jpg",
+    url: "images/img2.jpg",
     address: "Donate for Flood at Noakhali, Bangladesh",
     description: `The recent floods in Noakhali have caused significant damage to homes and infrastructure. 
         Your donation will help provide essential supplies to those affected by this disaster. Every contribution, 
@@ -19,14 +19,14 @@ const donationListData = [
   },
   {
     totalBalance: 0,
-    url: "/images/img1.jpg",
+    url: "images/img1.jpg",
     address: "Donate for Flood Relief in Feni, Bangladesh",
     description: `The recent floods in Feni have devastated local communities, leading to severe disruption and loss. 
         Your generous donation will help provide immediate aid.`,
   },
   {
     totalBalance: 0,
-    url: "/images/img3.jpg",
+    url: "images/img3.jpg",
     address: "Aid for Injured in the Quota Movement",
     description: `The recent Quota movement has resulted in numerous injuries. 
         Your support is crucial in providing medical assistance and rehabilitation to those affected.`,
@@ -84,7 +84,7 @@ function donationList(file, index) {
     <div class="flex flex-col gap-6 h-auto justify-between">
         <div class="flex">
             <div class="bg-[#111111] bg-opacity-5 gap-2 h-[44px] px-4 rounded-lg text-lg font-medium items-center justify-center flex">
-                <img src="/icon/dollar.svg" class="w-6 h-6" alt="" />
+                <img src="icon/dollar.svg" class="w-6 h-6" alt="" />
                 <div class="opacity-70">
                     <span>${file.totalBalance}</span>
                     <span>BDT</span>
