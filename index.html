@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header
+      class="pt-4 bg-[#F9F7F3] pb-6 bg-opacity-50 backdrop-blur-md sticky top-0 left-0 right-0 z-40"
+    >
+      <div class="w-4/5 flex mx-auto justify-between items-center">
+        <div>
+          <button
+            class="w-28 py-2 font-semibold text-[#111111] bg-[#B4F461] text-xl rounded-lg"
+          >
+            Blog
+          </button>
+        </div>
+        <div>
+          <img src="/icon/Frame 2.svg" class="w-64" alt="" />
+        </div>
+        <div>
+          <div>
+            <div class="flex items-center gap-2">
+              <img src="/icon/dollar 1.svg" alt="" />
+              <div class="font-medium text-[#111111] opacity-70">
+                <span class="main-balance">0.00</span>
+                <span>BDT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="mt-20">
+      <div class="mx-auto flex flex-col w-4/5 gap-8">
+        <nav class="mx-auto flex gap-8">
+          <button
+            class="px-6 py-2 font-semibold text-[#111111] bg-[#B4F461] text-xl rounded-lg"
+            id="donation-btn"
+          >
+            Donation
+          </button>
+          <button
+            class="w-28 py-2 font-semibold text-[#111111] border border-[#111111] border-opacity-50 text-xl rounded-lg"
+            id="history-btn"
+          >
+            History
+          </button>
+        </nav>
+
+        <div class="w-full">
+          <div class="flex flex-col gap-8" id="donatinItemsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success POPUP -->
+    <div
+      class="fixed inset-0 bg-black bg-opacity-10 backdrop-blur-2xl z-50 items-center justify-center hidden"
+      id="success-popup"
+    >
+      <div
+        class="px-20 py-8 bg-white rounded-xl flex flex-col items-center justify-center select-none gap-6"
+        id="popup-box"
+      >
+        <h1 class="text-4xl font-bold">Congrates!</h1>
+        <img src="/icon/dollar 1.svg" class="w-10" alt="" />
+        <p class="text-[#111] opacity-70 font-light text-base">
+          You Have Donated for Humankind
+        </p>
+        <h2 class="font-bold text-[#111] opacity-90 text-2xl">successfully</h2>
+        <button
+          class="bg-[#111] bg-opacity-15 text-[#111] text-opacity-70 font-semibold px-6 py-3 rounded-lg"
+          id="close-confirmation"
+        >
+          close confirmation
+        </button>
+      </div>
+    </div>
+
+    <!-- toast message -->
+
+    <div
+      id="toast-simple"
+      class="flex items-center w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-white divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 dark:bg-gray-800 fixed top-5 z-50 right-0 left-0 mx-auto -translate-y-20 opacity-0 scale-50 transition-all duration-300"
+      role="alert"
+    >
+      <svg
+        class="w-6 h-6 text-gray-800 dark:text-white"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="none"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m10.827 5.465-.435-2.324m.435 2.324a5.338 5.338 0 0 1 6.033 4.333l.331 1.769c.44 2.345 2.383 2.588 2.6 3.761.11.586.22 1.171-.31 1.271l-12.7 2.377c-.529.099-.639-.488-.749-1.074C5.813 16.73 7.538 15.8 7.1 13.455c-.219-1.169.218 1.162-.33-1.769a5.338 5.338 0 0 1 4.058-6.221Zm-7.046 4.41c.143-1.877.822-3.461 2.086-4.856m2.646 13.633a3.472 3.472 0 0 0 6.728-.777l.09-.5-6.818 1.277Z"
+        />
+      </svg>
+
+      <div class="ps-4 text-sm font-normal">Message sent successfully.</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

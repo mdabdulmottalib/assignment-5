@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+body {
+  font-family: "Lexend", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.donation-input::-webkit-inner-spin-button,
+.donation-input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.show {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.2); /* Optional: for zoom effect */
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
