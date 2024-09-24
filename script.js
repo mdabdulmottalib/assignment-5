@@ -84,7 +84,7 @@ function donationList(file, index) {
     <div class="flex flex-col gap-6 h-auto justify-between">
         <div class="flex">
             <div class="bg-[#111111] bg-opacity-5 gap-2 h-[44px] px-4 rounded-lg text-lg font-medium items-center justify-center flex">
-                <img src="/icon/dollar 1.svg" class="w-6 h-6" alt="" />
+                <img src="/icon/dollar.svg" class="w-6 h-6" alt="" />
                 <div class="opacity-70">
                     <span>${file.totalBalance}</span>
                     <span>BDT</span>
